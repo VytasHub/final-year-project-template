@@ -57,7 +57,49 @@ Describe the way you went about your project:
 
 
 \chapter{Technology Review}
+\section{Introduction}
 About seven to ten pages.
+
+
+Developing native applications separately for each platform is a laborious
+and expensive undertaking [1]. There has been an enormous increase in
+different types of mobile devices, operating systems and screen sizes; which
+creates issues from an application development point of view, when
+developing an application for each device. If you only take into account major
+operating systems out there like Android, iOS and Windows, that’s three
+separate platforms to develop for and if you want to target all of the market
+it would include others like Symbian Nokia, Blackberry SIM, Samsung BADA,
+WebOS and HP that’s 8 platforms to target 99 percent of the market. This
+literature review analysis reviews and supports four different categories of
+frameworks for mobile cross platform development that has been created in
+response of heterogeneity of mobile devices by referencing papers from the
+ACM and IEEE. It describes trends and issues of each type and which category
+and framework is leading in mobile cross platform development.
+
+\section{Existing and Emerging Operating Systems for Mobile Devices}
+
+There are four dominant mobile operating systems according to the IDC
+2015 Report [2]. Google’s Android (82.8%) OS is which based on Linux,
+Apple’s iOS (13.9%), Microsoft’s Windows Phone (2.6%) OS and the
+Blackberry (0.3%) OS. There are other platforms out there like Firefox, Tizen,
+Sailfish and Ubuntu Touch OS but they only account for 0.4% market share.
+While Android is the dominant operating system, it is supported on multiple
+2
+platforms and it is in sync with their vision of “write once, run everywhere”
+[3].
+There are other emerging mobile devices with their own operating systems;
+for instance Mozilla launched ZTE in early 2013 [4] but its market share
+hasn’t grown and is still under 0.4% market share, sharing with others. So
+two of the biggest players in the market are iOS and Android [5]. They both
+have communities built around them, are well matured and have been
+thoroughly tested. There are many open source libraries, especially for
+Android. As evidence suggests Android has the biggest market share. Over
+the years Android has kept growing in market share, acquiring bigger market
+share each year and predictions have been made that it will stop or slow
+down; the Yankee Group forecast stated in Analysis of Cross-Platform
+Development [21].
+
+\section{Categories and Frameworks of Cross Platform Development}
 
 Categories and Frameworks of Cross Platform Development
 In todays world, application development for smart devices is an evolving
@@ -84,7 +126,9 @@ one for each supported platform, thus dramatically increasing
 the required time and skills for developers, and finally, the cost
 of production. A solution is represented by Framework for cross
 platform development.”
-4. Interpreted Applications
+
+\section{Interpreted Applications}
+
 These applications are interpreted natively to a platform that it’s running
 on, so if it’s running on Android it will be interpreted in Java and if running
 on iOS it will be Objective-C, thus creating a one hundred percent native look
@@ -92,7 +136,9 @@ and feel in the application. Other benefits include being efficient and running
 smoothly; since the app is interpreted natively. One of the new frameworks
 for interpreted applications is MD 2[13]. One of the more mature frameworks
 would be Titanium which is discussed in more detail below.
-4.1. Titanium
+
+\subsection{Titanium}
+
 One of its most valuable features is that is is open source and has been in
 development since 2006. It was released in 2008 by the Appcelerator
 company and is a commercially supported product with its source code
@@ -113,8 +159,9 @@ look and feel for the application. One of the downsides is that support is
 limited on iOS and Android [9]. The advantage of this framework is the ability
 to compile the application with the native APIs; it provides a wider set of
 native device functionalities that web applications cannot provide [10].
-4
-5. Hybrid Applications
+
+\section{Hybrid Applications}
+
 Hybrid applications are primarily built using HTML5, they behave like a
 website. The way they work is that they have a container within the target
 platform, named UIWebView in iOS and WebView in Android; this allows
@@ -125,7 +172,9 @@ interpreted applications, so technology like jQueryMobile and Sencha Touch
 [12] are used to achieve native effect but they are not one hundred per cent
 native. One of the more popular frameworks is PhoneGap which is based on
 top of Cordova, described in more detail below.
-5.1. PhoneGap
+
+\subsection{PhoneGap}
+
 PhoneGap which is based on top of Apache Cordova was created by a
 company Nitoby and is supported by Adobe Systems; it is open source. The
 programmer needs to know HTML, CSS and JavaScript to develop
@@ -139,7 +188,9 @@ the camera, accelerometer, network, storage and others. The place where
 this framework is lacking is that the developer has to create his own style
 sheets to make the application feel native to its target platform, there are
 tools available for that such as: JQuery Mobile and Sencha Touch [12].
-5.2. Ionic
+
+\subsection{Ionic}
+
 Another hugely successful framework is the Ionic Framework. It is also
 based on top of Apache Cordova. Cordova deals with the low level hardware
 hooks allowing Ionic to use various hardware features on a device, such as
@@ -158,20 +209,26 @@ and JavaScript. Applications are than distributed to app stores such as
 Android and iOS. Ionic requires NPM (node package manager) in order to
 install various plugins. Ionic seems to be one of the most popular cross
 platform development frameworks for mobile at the moment.
-6. Generated Applications
+
+\section{Generated Applications}
+
 These applications are compiled natively, for that reason they achieve
 high performance and generate a native user interface. One of the
 frameworks used is Applause [14]. Applause is open source and is based on
 Xtext but not much development has been done on the framework [13].
 Applause is explained in more detail down below.
-6.1. Applause
+
+\subsection{Applause}
+
 Applause is based on model driven software development (MDSD). It
 includes tools to translate programming languages. It uses cross-compilers
 (XMLVN) [15] and transforms Android applications in Java. Applause is
 under EPL license which integrates with Eclipse and IDE support. There was
 very little information available on Applause, there is currently only one
 GitHub link [14].
-7. Web Applications
+
+\section{Web Applications}
+
 Web applications are browser-based applications running in a browser
 using HTML5. WebHooks allow developers to access the hardware on a
 phone, this was unavailable before HTML5 [16], also it allows other features
@@ -188,7 +245,9 @@ such as Xui, JQyeryMobile, Sencha Touch, JQTouch and WebApp.net. Some
 6
 frameworks developing web applications include AngularJS, Ruby on Rails,
 Django and Drupal. AngularJS is explained in more detail down below.
-7.1. AngularJS
+
+\subsection{AngularJS}
+
 It was developed by Misko Hevery in 2009 at Brath Tech LLC. It is now an
 open source framework mainly used for developing single page applications
 (SPA) it has become widely well known and is the top choice for many
@@ -212,7 +271,9 @@ applications and is expandable via plugins. NodeJS is cross platform runtime
 environment for server side applications, it’s open source. As we can see all
 the technologies used in the MEAN stack are open source suggesting the
 reason for its huge community and popularity.
-8. User Interface User Experience
+
+\section{ User Interface User Experience}
+
 There are many different operating systems out there like Google’s
 Android, Apple’s iOS, Microsoft ‘s Windows Phone OS, Nokia ‘s Symbian,
 Blackberry’s OS, Samsung’s BADA, WebOS and HP. The devices these OS’ run
@@ -237,6 +298,8 @@ to achieve more of a native look, libraries such as Xui, JQyeryMobile, Sencha
 Touch, JQTouch and WebApp.net. According to results produced by paper
 [20] a sufficient level of native user interface can be obtained if an
 appropriate framework is picked to develop an application.
+
+\section{ Conclusion}
 9. Conclusion
 “Write once run anywhere” [3] is a principal that was coined by Sun
 Microsystems when they were developing java, which is exactly the same as
