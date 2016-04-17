@@ -8,6 +8,7 @@ Explain here who the authors are.
 
 
 \chapter{Introduction}
+\bigbreak
 It’s a booking web application build using MEAN stack (MongoDB, Express, Angular, Node).The application is made of two websites bookAroom-user and bookAroom-admin.
 BookAroom-user is using Auth0 authentication system which allows for convenient log in with gmail fb as well as sign up form with password recovery. Once user is signed in he/she can book search and sort workbenches.
 BookAroom-admin is using json web-tokens identification system. It lets administrative user to add, edit and deletes existing and new workbenches.
@@ -42,16 +43,39 @@ Describe the way you went about your project:
 \section{Development Environment}
 About seven to ten pages.
 \subsection{Debian}
+\bigbreak
 Debian is an open source operating System developed. It’s one of many distributions of Linux but is one of the earliest distributions and was first announced in 1993 by Ian Murdock. It requires small hardware resources to run and is easy to set up and install it has graphical user interface version as well as command line version which father. When distribution is released initially it’s marked as unstable, father sufficient amount testing is done it become as stable and usually is adopted by more people than because it has less bugs and is more reliable. Debian has access to over 50 000 to packages located on the internet and any package can be installed with one command line which makes ideal work environment for web development because web development relies on many different components put together and if not done right issues arise with dependencies etc. With commands like sudo apt-get you can install any package you want and well documented and big community behind it.Tools like npm Node packet manger and grunt work very well in this environment.
 
 \subsection{Cli and Gnu Nano}
-
+\bigbreak
 Command Line Interface (CLI) doesn’t come with Debian it has to be installed. Moust of Operating Systems come with many tools installed which makes them very big and a bit slow Operating System like Debian takes different approach and start with just essential tools and then you install only tools that you need. CLI is needed to install some packages and execute some of the commands in Debian when working web environment.GNU Nano is a text editor Unix like operating system which makes it ideal for Debian and all Linux distributions. It allows for convenient bash scripts to be set up while in command prompt or terminal as now in Debian. As well it allows for convenient GitHub commits you can enter commit message and press chines hat and O to write out and commit changes to github.
 
 
-\subsection{Npm/Grunt}These two tools are absolutely essential to web development environment and you are must like wouldn’t be able to develop without them in today’s world. Npm is a default manager for JavaScript runtime environment in Node.js.it manages all package dependencies of an application as well as installing them. Grunt makes web development environment more efficient by eliminating repetitive tasks such as unit testing as well as shortening your run scripts such grunt serve is very popular for running your application as that is very repetitive command and is executed a lot.
+\subsection{Npm/Bower Grunt}
+\bigbreak
+These two tools are absolutely essential to web development environment and you are must like wouldn’t be able to develop without them in today’s world. Npm is a default manager for JavaScript runtime environment in Node.js.it manages all package dependencies of an application as well as installing them. Grunt makes web development environment more efficient by eliminating repetitive tasks such as unit testing as well as shortening your run scripts such grunt serve is very popular for running your application as that is very repetitive command and is executed a lot.
+
+\\
+\bigbreak
+
+Bower its package management system for web applications and uses node.js and npm.
+In this project bower installation method was used preferably to npm. When installing firebase to the application throw npm using commands like.
+
+\begin{itemize}
+	\item npm install firebase –save
+\end{itemize}
+Reference needs to be added to index.html page which downloads firebase module over the net.
+
+
+\begin{minted}{javascript}
+src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"
+\end{minted}
+
+
+
 
 \subsection{Github}
+\bigbreak
 Github was founded in 2008 its web based git repository it lets users have public repositories which are free and you can have any amount it also has an option for private repositories for which you have to pay and the more private repositories you have more you have to pay, but I has student bundles which provide 100 dollars’ worth of development tools which is great for beginner developers such as myself. It provides graphical user interface for Windows and Mac to manage maintain and update projects but it does cause some errors failing to commit or failing to push or merge when that happens user is suggested to use git to fix the errors. For that reason git is way more stable and reliable which is command based tool it has five major commands hat are used constantly.It has played major role in this project and made project way more manageable and sustainable as well as less error prone regular commits made sure of small incremental progress throw out life of the project.
 
 \begin{itemize}
@@ -75,7 +99,7 @@ Github was founded in 2008 its web based git repository it lets users have publi
 
 
 \subsection{Sublime, Live Reload and Chrome}
-
+\bigbreak
 Sublime is code editor that supports cross platform functionality. It supports many different programming languages as well as mark-up languages and functionality can be extended with huge amount of plug in packages available. Currently Sublime is on version 3 it has been released in 2013.
 There are other editors out there such as Notepad++, Brackets, Vim Atom but Sublime proved to be most efficient in web development environment.Some of its best features;
 
@@ -95,13 +119,29 @@ There are other editors out there such as Notepad++, Brackets, Vim Atom but Subl
 
 \section{Mean Stack}
 \subsection{Mongodb/Firebase}
-
+\bigbreak
 MongoDB comes as part of popular stack MEAN it’s a cross-platform document-oriented database and is classified as NoSql database. Its free and open source under a combination of the GNU Affero General Public License and the Apache License. Being object oriented data base it is shameless and needs no scheme as its older counter parts SQL based data bases. For that matter there is mongoose was developed which is an ORM for Mongo and is written in node.js and allows to give mongodb a scheme to make it more comparable with older system which all use SQL based data bases. It has grown in popularity and now is fourth most popular database management system. Its stores everything as an object in JSON like format and files object are indexed which allows instant retrieval of an object. 
 \\
+\bigbreak
+Firebase was founded in 2011 and is object oriented database allowing for fast retrieval of objects. It allows to store and sync data across many different platforms one of its best feature is three way data binding between Firebase and your applications view and controller and stores data in json like format which is well understood format by developers across the world. Company has been acquired by google in 2014. Firebase is built in to Auth0 authentication framework which was one of the reasons why it was chosen for this project because Auth0 framework was used for authentication of this application Auth0 framework will be explained in more detail in Components section. Firebase generates authentication key which needs to be supplied to Auth0 in order to let firebase requests throw authentication system shown below.
+\begin{minted}{javascript}
+
+var ref = new Firebase("https://bookaroomfirebase.firebaseio.com/");
+ref.auth("AUTH_TOKEN", function(error, result){
+if (error){
+console.log("Authentication Failed!", error);
+}else{
+console.log("Authenticated successfully with payload:", result.auth);
+console.log("Auth expires at:", new Date(result.expires * 1000));
+}
+});
+
+\end{minted}
 
 
 \subsection{Express}
 \subsection{Angular}
+\bigbreak
 Web applications are browser-based applications running in a browser
 using HTML5. WebHooks allow developers to access the hardware on a
 phone, this was unavailable before HTML5 [16], also it allows other features
