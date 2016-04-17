@@ -215,10 +215,76 @@ the technologies used in the MEAN stack are open source suggesting the
 reason for its huge community and popularity.
 
 \subsection{Node}
+\bigbreak
+Is an open source cross platform runtime environment for developing server-side web applications. It has been founded and released in 2009 and interprets googles V8 JavaScript engine. Some of the corporate users from industry include IBM, LinkedIn, PayPal, SAP, Yahoo so it’s well adopted by heavy hitters in industry. Originally Node.js was only supported by linux operating systems, which enforces the reason for using Debian/linux operating system for this project.
 
 
 \section{Components}
 \subsection{Yeoman/Modules}
+\bigbreak
+Yeoman is an open source client side development stack allowing developers web applications quickly not worrying about initial process of setting up it includes all industry standards such bootstrap responsive design etc. Some of the tools used in conjunction with yeoman generator.
+
+\begin{itemize}
+
+	\item Grunt 
+	\item Gulp
+	\item Bower
+	\item Npm
+
+\end{itemize}
+
+When yeoman generator is initialized it generates full web application with all of the main structure. 
+It generates app.js file which contains all the modules injections and any new injections need to be added to this file some of the modules used in this project:
+
+\begin{itemize}
+	
+	\item 'firebase' 
+	\item 'ngCookies'
+	\item 'ngResource'
+	\item 'ngRoute'
+	\item 'ngSanitize' 
+	\item 'ngTouch'
+	\item 'formly'
+	\item 'formlyBootstrap'
+	\item 'ngAnimate'
+	
+\end{itemize}
+\bigbreak
+
+As well it contains Route Provider that maps all the views html pages to JavaScript controllers so each view is served one controller JavaScript class, this might prove a problem as it only allows for one script per class so services can be injected to controllers to add more scripts per one view.It also maps pages html address so this can be used in future for authentication.Code below how routing ow one html page looks like.
+\bigbreak
+\begin{minted}{javascript}
+
+ .when('/view', {
+ templateUrl: 'views/view.html',
+ controller: 'WorkBenchController',
+ controllerAs: 'fireApp'
+ })
+
+\end{minted}
+\bigbreak
+Testing modules of Yoeman:
+\bigbreak
+
+\begin{itemize}
+	
+	\item jshint 
+	\item travis
+	\item karma
+	\item jscsrc
+	
+\end{itemize}
+\bigbreak
+
+JSHint, a tool that helps to detect errors and potential problems in  JavaScript code.
+Karma a simple tool that allows you to execute JavaScript code in multiple real browsers.
+Travis lets you test your build modules.
+
+
+
+
+
+
 \subsection{Angular formly}
 \subsection{Ng-repeat}
 \subsection{Heroku}
