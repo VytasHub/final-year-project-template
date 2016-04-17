@@ -55,7 +55,7 @@ Command Line Interface (CLI) doesn’t come with Debian it has to be installed. 
 \bigbreak
 These two tools are absolutely essential to web development environment and you are must like wouldn’t be able to develop without them in today’s world. Npm is a default manager for JavaScript runtime environment in Node.js.it manages all package dependencies of an application as well as installing them. Grunt makes web development environment more efficient by eliminating repetitive tasks such as unit testing as well as shortening your run scripts such grunt serve is very popular for running your application as that is very repetitive command and is executed a lot.
 
-\\
+
 \bigbreak
 
 Bower its package management system for web applications and uses node.js and npm.
@@ -140,6 +140,37 @@ console.log("Auth expires at:", new Date(result.expires * 1000));
 
 
 \subsection{Express}
+\bigbreak
+Is part of the MEAN stack bundle and it handles server side. Express is owned by IBM as of 2015 ans in 2016 IBM announced that it will put Exprrss.js under the stewardship of the Node.js foundation incubator.
+\bigbreak
+Express.js is a node.js web application (node.js is covered in other section) and uses minimalistic approach all server side script can be done in few lines of code this peace of code was used to run bookAroom-admin website shown below.
+
+\begin{minted}{javascript}
+
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 8080;
+
+app.use(express.static(__dirname + '/dist/'));
+
+app.listen(port, function() {
+console.log('Our app is running on port: ' + port);
+});
+
+\end{minted}
+\bigbreak
+And everything else is available as a plug in you simply require all the modules that you need. The modules below where used in bookAroom-user application to authenticate user.
+
+\begin{minted}{javascript}
+
+var http = require('http')
+var cors = require('cors');
+var jwt = require('express-jwt');
+var dotenv = require('dotenv');
+
+\end{minted}
+
+
 \subsection{Angular}
 \bigbreak
 Web applications are browser-based applications running in a browser
@@ -158,7 +189,7 @@ such as Xui, JQyeryMobile, Sencha Touch, JQTouch and WebApp.net. Some
 6
 frameworks developing web applications include AngularJS, Ruby on Rails,
 Django and Drupal. AngularJS is explained in more detail down below.
-
+\bigbreak
 It was developed by Misko Hevery in 2009 at Brath Tech LLC. It is now an
 open source framework mainly used for developing single page applications
 (SPA) it has become widely well known and is the top choice for many
@@ -193,19 +224,6 @@ reason for its huge community and popularity.
 \subsection{Heroku}
 \subsection{Auth0}
 
-\section{Google Maps}
-\subsection{Google Maps APIs}
-In the beginning, the Google Maps service was only accessible at https://maps.google.com but due to its popularity, Google decided to share it with the world by creating the Google Maps APIs in 2005 which allowed for simple use or extensive customization.  These APIs allow developers to embed Google Maps into web pages where site specific data can be overlaid, or retrieve data from Google Maps.  Google Maps use Ajax so data can be sent and received from the server asynchronously without affecting or having to reload the entire page.  
-
-\subsection{Google Maps JavaScript API}
-The Google Maps JavaScript API allows a number of different elements to be added to the map for functionality, such as;	
-\begin{itemize}	
-	\item Overlays – these can represent a point of interest using markers for example. 
-	\item Events – triggered by an action such as clicking the map. 
-	\item Controls – controls to enable zooming, moving map and switching between map types. 
-	\item Services – allows functionality and features such as directions, geocoding (addresses to coordinates). 	
-\end{itemize}	
-As the MEAN Stack was used to develop the application, JavaScript was used throughout the project so it meant the API could be easily integrated. The API is also fairly well documented and free to use for low volume. Google Maps provides other advantages as noted in a paper by Fu, Wang, Xu and Li. They explain that Google Maps is easy to use, such as the movement and zooming features, which has a big effect on the user. They note the advantage of Google Maps being updated from time to time and the fact that the API is free. Using the Google Maps API enhances interactivity, enriches client functionality and enhances the user experience. They also comment on no additional installation being needed.
 
 
 
@@ -215,15 +233,7 @@ As the MEAN Stack was used to develop the application, JavaScript was used throu
 \item Use references (IEEE format, e.g. [1]), Books, Papers, URLs (timestamp) – sources should be authoritative. 
 \end{itemize}
 
-\section{XML}
-Here's some nicely formatted XML:
-\begin{minted}{xml}
-<this>
-  <looks lookswhat="good">
-    Good
-  </looks>
-</this>
-\end{minted}
+
 
 \chapter{System Design}
 As many pages as needed.
