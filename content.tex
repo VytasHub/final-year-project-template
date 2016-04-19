@@ -74,7 +74,7 @@ src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"
 
 
 
-\subsection{Github}
+\subsection{Github, git}
 \bigbreak
 Github was founded in 2008 its web based git repository it lets users have public repositories which are free and you can have any amount it also has an option for private repositories for which you have to pay and the more private repositories you have more you have to pay, but I has student bundles which provide 100 dollars’ worth of development tools which is great for beginner developers such as myself. It provides graphical user interface for Windows and Mac to manage maintain and update projects but it does cause some errors failing to commit or failing to push or merge when that happens user is suggested to use git to fix the errors. For that reason git is way more stable and reliable which is command based tool it has five major commands hat are used constantly.It has played major role in this project and made project way more manageable and sustainable as well as less error prone regular commits made sure of small incremental progress throw out life of the project.
 
@@ -286,7 +286,54 @@ Travis lets you test your build modules.
 
 
 \subsection{Angular formly}
-\subsection{Ng-repeat}
+\bigbreak
+Angular formly simplifies form layout in html and allows for more structured code give forms consistency, flexibility, maintainability, simplicity and sanity. Before Angular-formly if you would wanted to have a form you would had something like this to get your input from user:
+
+\bigbreak
+\begin{minted}{html}
+
+<form>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" class="form-control" 
+id="exampleInputEmail1" placeholder="Enter 
+email" ng-model="vm.user.email">
+</div>
+
+<div class="form-group">
+<label for="exampleInputPassword1">Password</label>
+<input type="password" class="form-control" 
+id="exampleInputPassword1" placeholder="Password"
+ ng-model="vm.user.password">
+</div>
+
+<button type="submit" class="btn btn-default"
+ ng-click="vm.submit(vm.user)">
+ Submit</button>
+</form>
+
+\end{minted}
+\bigbreak
+For every bouton check box dropdown list etc you need a div with at-least 3 lines of code formly replaces that with this:
+\bigbreak
+
+\begin{minted}{html}
+
+<formly-form model="vm.user" fields="vm.userFields">
+<button type="submit" class="btn btn-default" 
+ng-click="vm.submit(vm.user)">Submit</button>
+</formly-form>
+
+
+\end{minted}
+\bigbreak
+
+Which is efficient from html point of view but it does call additional JavaScript so it trims down on html but beefs up on server side. Depending on the application this can be used or not. But it does make html more readable and understandable.
+
+
+
+
+\subsection{Ng-repeat, orderBy, filter}
 \subsection{Heroku}
 \subsection{Auth0}
 
