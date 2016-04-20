@@ -334,6 +334,43 @@ Which is efficient from html point of view but it does call additional JavaScrip
 
 
 \subsection{Ng-repeat, orderBy, filter}
+\bigbreak
+
+All of the more advanced applications today have some sort of dynamic element to it there is very few simple static content websites. Websites today are dynamic and ever changing the dynamic element of the websites always includes some sort of connections to database might be sql, object oriented or graph database it calls thouse elements from database and must render them in html and css rendering each element manually would be tedious and time consuming ng-repeat allows to define html once for one element and looped throw all the elements using same code and it looks like this:
+\bigbreak
+
+\begin{minted}{html}
+
+<tr ng-repeat="item in WorkBenches | orderBy:sortType:sortReverse | filter:searchWorkbench">
+<td>{{ item.Address }}</td>
+<td>{{ item.CityTown }}</td>
+<td>{{ item.WName }}</td>
+<td>
+</tr>
+
+\end{minted}
+\bigbreak
+
+So with some JavaScript code it makes call	to Firebase database and for every item in WorkBenches which we can see there a few t renders it in html.
+\bigbreak
+
+\begin{center}    
+	\includegraphics{img/FirebaseLayout.png}
+\end{center}
+\bigbreak
+
+And the effect of ng-Repeat in html page is this and you can have as many elemnts as you like.
+
+\begin{center}    
+\includegraphics{img/PrintOutHtml.png}
+\end{center}
+\bigbreak
+
+Few of other elemnts to mention is orderBy and filter. Orderby alows to order item in ng-repeat so you can order by any of the three atributes; Address, CityTown, WName. Filter alows to to add search bar to the list so you can look for item so as you type in name you looking for only thouse item containg typed in cahracters get renderd in html and if search bar is empty all items are rendered because all contain nothing. Ng- Repeat just makes life easier.
+
+
+
+
 \subsection{Heroku}
 \subsection{Auth0}
 
