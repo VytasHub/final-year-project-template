@@ -372,6 +372,92 @@ Few of other elemnts to mention is orderBy and filter. Orderby alows to order it
 
 
 \subsection{Heroku}
+\bigbreak
+
+  Orion Henry, Adam Wiggins and James Lindenbaum founded Heroku in 2007 and was acquired by Salesforce in 2010.Heroku is cloud based Platform-as-a-service for short is called PaaS in the beginning it supported just Ruby but now since it grew so in popularity it supports more languages like; PHP, Go, Java, Scala, Clojure, Python and most important Node.js which made it possible to develop this application.Few things are needed to get started with heroku
+\bigbreak
+\begin{itemize}
+
+	\item Node 
+	\item Npm
+	\item Heroku Toolbelt
+	\item Git Bash
+	
+\end{itemize}
+\bigbreak
+
+After these tools are installed in command prompt you type in heroku and then heroku login that will give you powers to upload your website from command line from your git repository.
+
+You will need to create proc file in your root repository and include this peace of code to tell heroku server to run your application just same way you start your application locally same way it start on Heroku server you just need to tell it.
+
+\bigbreak
+
+
+\begin{itemize}
+	
+	\item web: node server.js
+
+\end{itemize}
+\bigbreak
+
+When you are loged in your heroku account throw cmd you need cloned git repository using git command (This emplies your application has node server build)
+\bigbreak
+
+\begin{minted}{html}
+
+$git clone https://github.com/VytasHub/bookAroom-admin
+
+\end{minted}
+\bigbreak
+
+You than go heroku create that creates your website.Afther that you type following command which gives website name nad port number on which it listens. 
+
+\bigbreak
+\begin{minted}{html}
+
+heroku apps:rename heroku-node-8080 --app calm-reaches-6216
+
+\end{minted}
+\bigbreak
+
+Than you simply push to server and your app is runing.
+\bigbreak
+\begin{minted}{html}
+
+git push heroku master
+
+\end{minted}
+\bigbreak
+
+Few other usefull commands to mention.This will alow to see you if the application is running.
+
+\bigbreak
+\begin{minted}{html}
+
+$ heroku ps:scale web=1
+
+\end{minted}
+\bigbreak
+
+And this will open website from command line.
+
+\bigbreak
+\begin{minted}{html}
+
+$ heroku open
+
+\end{minted}
+\bigbreak
+
+One of the issues that occurred while deploying to server was when pushing to server using git push heroku master old website were getting pushed. So need to use git status to see what you actually pushing because git repositories get queued in heroku and only first one gets pushed.
+
+
+
+
+
+
+
+
 \subsection{Auth0}
 
 
