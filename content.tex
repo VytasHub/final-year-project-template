@@ -2,7 +2,7 @@
 
 \bigbreak
 The project aim is to create booking system for Bank of Ireland workbenches as its becoming more and more automated all branches across Ireland have viewer people in them and all the free space become available and unused so workbenches idea was introduced to fill the empty space. The approach taken to develop this was make a web application using MEAN (MongoDB, Express, Angular, Node) approach
-and swap MongoDB for Firebase. Conclusion was reached after much research to develop 2 websites one for the users one for the admin. The purpose of admin website is to add new workbenches all across Ireland and be able to edit them and suspend them if needed. The user site has authentication from third party software called Auth0 system them lets them log with gmail or GitHub for convenience or sign up for an account in and see all the workbenches added and lets them book and workbench available as well as search for viany particular workbench in the Country, google Maps plug in is also available that shows all the workbenches on map marked with pin that displays additional details. The finished websites were uploaded on heroku server so can be accessed publicly.
+and swap MongoDB for Firebase. Conclusion was reached after much research to develop 2 websites one for the users one for the admin. The purpose of admin website is to add new workbenches all across Ireland and be able to edit them and suspend them if needed. The user site has authentication from third party software called Auth0 system them lets them log with gmail or GitHub for convenience or sign up for an account in and see all the workbenches added and lets them book and workbench available as well as search for any particular workbench in the Country, google Maps plug in is also available that shows all the workbenches on map marked with pin that displays additional details. The finished websites were uploaded on heroku server so can be accessed publicly.
 Firstly, at the moment, users must contact the workbench only during business hours to schedule a room. As the project proposes an online booking system, it will be available 24/7, thus solving this issue and cutting out the middle-man as the workbench does not need to be contacted directly.
 The project also enables the user to see all centres on a map within a specified distance. It will act as a 'one-stop shop' for the user, rather than having to contact each centre separately to check availability or to make a booking. As well as this it will display to the user alternate centres if one is not available. The application allows workbenches to be easily added, edited or removed as needed.
 
@@ -11,8 +11,12 @@ The project also enables the user to see all centres on a map within a specified
 Developers of the project were:
 \bigbreak
 
-Vytas Vaiciulis 
-\\Niall Mcgrath 
+\begin{itemize}
+	\item Vytas Vaiciulis 
+	\item Niall Mcgrath 
+\end{itemize}
+
+
 \pagebreak
 
 \chapter*{Acknowledgements}
@@ -33,16 +37,18 @@ The project also enables the user to see all centres on a map within a specified
 
 \chapter{Context}
 \begin{itemize}
-\item Provide a context for your project.
-\item Set out the objectives of the project
-\item Briefly list each chapter / section and provide a 1-2 line description of what each section contains.
-\item List the resource URL (GitHub address) for the project and provide a brief list of the main elements at the URL.
-\end{itemize}
 
-\section{Filler}
+These are the links to Github repositories used for this project as well as Latex repository used for this documentation.
+\bigbreak
 
+\\https://github.com/VytasHub/bookAroom-admin
+\\https://github.com/VytasHub/bookAroom-user
+\\https://github.com/VytasHub/final-year-project-template
+\\https://github.com/mcgrath94/FYP-Google-Maps
+\bigbreak
+At present there is no system in place which would easily allow a user to view workbenches and book a room in these facilities. This project aims to solve this problem by offering a service which seeks to deliver both of these goals in one place.
+One of the objectives of this project was to display the locations of the workbenches on a map allowing the user to choose the most convenient one or see alternative options in their area.
 
-\section{Filler}
 
 
 \chapter{Methodology}
@@ -54,13 +60,15 @@ During this project, the agile approach was chosen over more traditional approac
 
 \section{GitHub}
 
-At various times throughout the project, GitHub, an online project hosting tool, was used to maintain and keep track of the development. GitHub was chosen as it offers all the distributed revision control and source code management functionality of Git but has other benefits which make it easier to use such as a web based interface and desktop integration, rather than just using the command line. Here are the repositories links that the project is composed of. 
+At various times throughout the project, GitHub, an online project hosting tool, was used to maintain and keep track of the development. GitHub was chosen as it offers all the distributed revision control and source code management functionality of Git but has other benefits which make it easier to use such as a web based interface and desktop integration, rather than just using the command line. 
+\\
+\\Here are the repositories links that the project is composed of. 
 
-https://github.com/VytasHub/bookAroom-user
-https://github.com/VytasHub/bookAroom-admin
-https://github.com/mcgrath94/FYP-Google-Maps
-And also link to the documentation repository.
-https://github.com/VytasHub/final-year-project-template
+\\https://github.com/VytasHub/bookAroom-user
+\\https://github.com/VytasHub/bookAroom-admin
+\\https://github.com/mcgrath94/FYP-Google-Maps
+\\And also link to the documentation repository.
+\\https://github.com/VytasHub/final-year-project-template
 
 
 
@@ -77,11 +85,11 @@ The app was tested by running it locally and listening to that port. This allowe
 
 \chapter{Technology Review}
 \section{Development Environment}
-About seven to ten pages.
+
 \subsection{Debian}
 \bigbreak
-Debian is an open source operating System developed. It’s one of many distributions of Linux but is one of the earliest distributions and was first announced in 1993 by Ian Murdock. It requires small hardware resources to run and is easy to set up and install it has graphical user interface version as well as command line version which father. When distribution is released initially it’s marked as unstable, father sufficient amount testing is done it become as stable and usually is adopted by more people than because it has less bugs and is more reliable. Debian has access to over 50 000 to packages located on the internet and any package can be installed with one command line which makes ideal work environment for web development because web development relies on many different components put together and if not done right issues arise with dependencies etc. With commands like sudo apt-get you can install any package you want and well documented and big community behind it.Tools like npm Node packet manger and grunt work very well in this environment.
-
+Debian is an open source operating System developed. It’s one of many distributions of Linux but is one of the earliest distributions and was first announced in 1993 by Ian Murdock. It requires small hardware resources to run and is easy to set up and install it has graphical user interface version as well as command line version. When distribution is released initially it’s marked as unstable, after sufficient amount testing is done it become as stable and usually is adopted by more people than because it has less bugs and is more reliable. Debian has access to over 50 000 to packages located on the internet and any package can be installed with one command line which makes ideal work environment for web development because web development relies on many different components put together and if not done right issues arise with dependencies etc. With commands like sudo apt-get you can install any package you want and well documented and big community behind it.Tools like npm Node packet manger and grunt work very well in this environment.
+\pagebreak
 \subsection{Cli and Gnu Nano}
 \bigbreak
 Command Line Interface (CLI) doesn’t come with Debian it has to be installed. Moust of Operating Systems come with many tools installed which makes them very big and a bit slow Operating System like Debian takes different approach and start with just essential tools and then you install only tools that you need. CLI is needed to install some packages and execute some of the commands in Debian when working web environment.GNU Nano is a text editor Unix like operating system which makes it ideal for Debian and all Linux distributions. It allows for convenient bash scripts to be set up while in command prompt or terminal as now in Debian. As well it allows for convenient GitHub commits you can enter commit message and press chines hat and O to write out and commit changes to github.
@@ -213,7 +221,7 @@ Web applications are browser-based applications running in a browser
 using HTML5. WebHooks allow developers to access the hardware on a
 phone, this was unavailable before HTML5 [16], also it allows other features
 such as web storage, indexed database APIs, file APIs, web SQL Databases and
-Offline Web GeoLocations [16]. This makes web applications more mobile
+Offline Web GeoLocations. This makes web applications more mobile
 friendly and compatible and allows them to use the full range of phone
 features. They do not require installation or any upgrades as it contains a one
 to many relationship (one server, many clients) so any updates are done on
@@ -231,7 +239,7 @@ open source framework mainly used for developing single page applications
 (SPA) it has become widely well known and is the top choice for many
 developers for creating dynamic html pages. In order to be able to program
 in AngularJS you have to know HTML, CSS and JavaScript. It is maintained by
-Google and the developer-community; it is under MIT license [17]. It uses
+Google and the developer-community; it is under MIT license. It uses
 data binding which means you can attach controllers to certain parts of the
 page as well as taking advantage of the MVC (Model, View, Controller)
 pattern, creating a loosely coupled design to separate the three components
@@ -239,7 +247,7 @@ of the web application so that they all are independent to one another; one of
 them can be changed without impacting the others and you can swap and
 change components. If an application contains more than one page it can use
 Client side routing in order to dynamically switch content without refreshing
-the page [18]. The Batarang plugin was built by Google in 2012 to improve
+the page. The Batarang plugin was built by Google in 2012 to improve
 the debugging of web applications built using AngularJS. It is also used with
 another three popular technologies known collectively as the MEAN Stack
 (MongoDB, Express, AngularJS and NodeJS). MongoDB is cross platform
@@ -350,7 +358,7 @@ id="exampleInputPassword1" placeholder="Password"
 
 \end{minted}
 \bigbreak
-For every bouton check box dropdown list etc you need a div with at-least 3 lines of code formly replaces that with this:
+For every button check box drop-down list etc you need a div with at-least 3 lines of code formly replaces that with this:
 \bigbreak
 
 \begin{minted}{html}
@@ -372,12 +380,13 @@ Which is efficient from html point of view but it does call additional JavaScrip
 \subsection{Ng-repeat, orderBy, filter}
 \bigbreak
 
-All of the more advanced applications today have some sort of dynamic element to it there is very few simple static content websites. Websites today are dynamic and ever changing the dynamic element of the websites always includes some sort of connections to database might be sql, object oriented or graph database it calls thouse elements from database and must render them in html and css rendering each element manually would be tedious and time consuming ng-repeat allows to define html once for one element and looped throw all the elements using same code and it looks like this:
+All of the more advanced applications today have some sort of dynamic element to it there is very few simple static content websites. Websites today are dynamic and ever changing the dynamic element of the websites always includes some sort of connections to database might be sql, object oriented or graph database it calls those elements from database and must render them in html and css rendering each element manually would be tedious and time consuming ng-repeat allows to define html once for one element and looped throw all the elements using same code and it looks like this:
 \bigbreak
 
 \begin{minted}{html}
 
-<tr ng-repeat="item in WorkBenches | orderBy:sortType:sortReverse | filter:searchWorkbench">
+<tr ng-repeat="item in WorkBenches | 
+orderBy:sortType:sortReverse | filter:searchWorkbench">
 <td>{{ item.Address }}</td>
 <td>{{ item.CityTown }}</td>
 <td>{{ item.WName }}</td>
@@ -387,7 +396,7 @@ All of the more advanced applications today have some sort of dynamic element to
 \end{minted}
 \bigbreak
 
-So with some JavaScript code it makes call	to Firebase database and for every item in WorkBenches which we can see there a few t renders it in html.
+So with some JavaScript code it makes call	to Fire-base database and for every item in Work Benches which we can see there a few t renders it in html.
 \bigbreak
 
 \begin{center}    
@@ -395,14 +404,14 @@ So with some JavaScript code it makes call	to Firebase database and for every it
 \end{center}
 \bigbreak
 
-And the effect of ng-Repeat in html page is this and you can have as many elemnts as you like.
+And the effect of ng-Repeat in html page is this and you can have as many elements as you like.
 
 \begin{center}    
 \includegraphics{img/PrintOutHtml.png}
 \end{center}
 \bigbreak
 
-Few of other elemnts to mention is orderBy and filter. Orderby alows to order item in ng-repeat so you can order by any of the three atributes; Address, CityTown, WName. Filter alows to to add search bar to the list so you can look for item so as you type in name you looking for only thouse item containg typed in cahracters get renderd in html and if search bar is empty all items are rendered because all contain nothing. Ng- Repeat just makes life easier.
+Few of other elements to mention is order By and filter. Order by allows to order item in ng-repeat so you can order by any of the three attributes; Address, CityTown, WName. Filter allows to to add search bar to the list so you can look for item so as you type in name you looking for only those item containing typed in characters get rendered in html and if search bar is empty all items are rendered because all contain nothing. Ng- Repeat just makes life easier.
 
 
 
@@ -446,7 +455,7 @@ $git clone https://github.com/VytasHub/bookAroom-admin
 \end{minted}
 \bigbreak
 
-You than go heroku create that creates your website.Afther that you type following command which gives website name nad port number on which it listens. 
+You than go heroku create that creates your website.Afther that you type following command which gives website name and port number on which it listens. 
 
 \bigbreak
 \begin{minted}{html}
@@ -456,7 +465,7 @@ heroku apps:rename heroku-node-8080 --app calm-reaches-6216
 \end{minted}
 \bigbreak
 
-Than you simply push to server and your app is runing.
+Than you simply push to server and your app is deployed.
 \bigbreak
 \begin{minted}{html}
 
@@ -465,7 +474,7 @@ git push heroku master
 \end{minted}
 \bigbreak
 
-Few other usefull commands to mention.This will alow to see you if the application is running.
+Few other use-full commands to mention.This will allow to see you if the application is running.
 
 \bigbreak
 \begin{minted}{html}
@@ -489,15 +498,66 @@ One of the issues that occurred while deploying to server was when pushing to se
 
 \subsection{Auth0}
 
-\begin{minted}{javascript}
+Auth0 pronounced "Auth Zero" provides authentications system and framework for all kinds of applications such as Web applications, Interpreted applications, Hybrid Applications, Generated Applications. It abstracts all of the authentication from the developer and lets developer focus on actual applications development instead of doing same repetitive tasks that all applications have .One of the reasons why it was chosen for this project is that it also works well with Firebase and with relative small adjustments to the code allows to retrieve information from firebase.
+\\
 
-.when('/view', {
-templateUrl: 'views/view.html',
-controller: 'WorkBenchController',
-controllerAs: 'fireApp'
-})
+Auth0 handles login, signup, password recovery, as well one of its key features it allows social connections such as Facebook, Gmail, Twitter, GitHub etc. Which makes it very convenient for the user as it allows quick and fast access without tedious sign up process. As well as that it also allows database exporting and importing of existing users from different application. So old applications can be updated to log in system. Here as an example how easy it is to switch social connections in your Auth0 dashboard.
+\bigbreak
+SocialProviders
+\begin{center}    
+	\includegraphics{img/SocialProviders.png}
+\end{center}
+
+In the application in index.html page there only has to be 2 reference that gets the Auth0 widget log in window which are showed down below.
+\begin{minted}{html}
+
+<script type="text/javascript" src="https://cdn.auth0.com/js/lock-7.12.min.js"></script>
+<script type="text/javascript" src="https://cdn.auth0.com/w2/auth0-angular-4.js"></script>
 
 \end{minted}
+
+And than depending on the applications you need to add few more JavaScript reference which get tailored to your application and are provided by Auth0.
+\begin{minted}{html}
+
+<script type="text/javascript" src="auth0-variables.js">
+</script>
+<script src="//cdn.rawgit.com/auth0/angular-storage
+/master/dist/angular-storage.js" 
+type="text/javascript"> </script>
+<script src="//cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js" 
+type="text/javascript"> </script>
+
+\end{minted}
+And the end result is beautifully looking widget added to your application.
+\begin{center}    
+	\includegraphics{img/Widget.png}
+\end{center}
+In development of this application more functionality was added using Auth0 framework. When user logs in using social provider such as Facebook Gmail etc. Auth0 node API retrieves a user object from that provider with all user information and that information can be used in conjunction with application in this instance I used the information to flavour the application to user and made a nav bar in html that gets user picture and log in name. The object that’s retrieved from social provider can be used for further analysis as well as data analytics can be performed. Here is a diagram showing how Auth0 service works.
+\begin{center}    
+	\includegraphics{img/userFlow.png}
+\end{center}
+
+
+
+\bigbreak
+\section{Google Maps}
+In the beginning, the Google Maps service was only accessible at https://maps.google.com but due to its popularity, Google decided to share it with the world by creating the Google Maps APIs in 2005 which allowed for simple use or extensive customization. These APIs allow developers to embed Google Maps into web pages where site specific data can be overlaid, or retrieve data from Google Maps. Google Maps use Ajax so data can be sent and received from the server asynchronously without affecting or having to reload the entire page.  
+
+
+\section{Google Maps JS API}
+The Google Maps JavaScript API allows a number of different elements to be added to the map for functionality, such as;
+
+\begin{itemize}
+	
+	\item Overlays – these can represent a point of interest using markers for example.  
+	\item Events – triggered by an action such as clicking the map. 
+	\item Controls – controls to enable zooming, moving map and switching between map types.
+	\item Services – allows functionality and features such as directions, geocoding (addresses to coordinates). 
+	
+\end{itemize}	
+\section{MongoDB Hosting}
+MongoLab, now called mLab, was founded in 2011 and provides a fully managed cloud database service that can host MongoDB databases. At present it allows you to choose from three different cloud providers; Amazon Web Services (AWS), Google's Cloud Platform, or Microsoft's Azure. Each of these offer plans with up to 500MB free storage with paid plans thereafter. MongoDB has partnered with Platform-as-a-service providers such as Heroku and Microsoft Azure. Network World named mLab as one of the 10 most useful cloud databases. mLab provides an easy to use, seamless, zero-downtime scaling service that lets you focus on your product instead of operations.
+
 
 
 
@@ -570,35 +630,317 @@ FEevfFL8eIBeGt2bf3DucmAMqeLzuv4jpbGnM-uoXiea_EqZoWyLN';
 \pagebreak
 \subsection{Firebase}
 \bigbreak
-Firebase store all the workbeches object and can be Created, Updated, Deleted.
+Fire-base store all the workbenches object and can be Created, Updated, Deleted.
 
 \begin{center}    
 	\includegraphics{img/Firebase.png}
 \end{center}
+
+\subsection{MongoDB}
+\bigbreak
+MongoLab, now called mLab, was founded in 2011 and provides a fully managed cloud database service that can host MongoDB databases. At present it allows you to choose from three different cloud providers; Amazon Web Services (AWS), Google's Cloud Platform, or Microsoft's Azure. Each of these offer plans with up to 500MB free storage with paid plans thereafter. MongoDB has partnered with Platform-as-a-service providers such as Heroku and Microsoft Azure. Network World named mLab as one of the 10 most useful cloud databases. mLab provides an easy to use, seamless, zero-downtime scaling service that lets you focus on your product instead of operations.
+\subsection{WebApplication}
+
+Web application consists of 3 components.
+\begin{itemize}
+	\item Landing Page
+	\item Login Widget
+	\item Application Content 
+\end{itemize}
+\bigbreak
+\bigbreak
+Landing Page describes what's Webapp about briefly and lets user to sign.
+
+\begin{center}    
+	\includegraphics{img/LandingPage.png}
+\end{center}
 \pagebreak
 
+Login Widget allows user to log in to application with social provider such as github or gmail or sign up.
+\begin{center}    
+	\includegraphics{img/Widget.png}
+\end{center}
+\pagebreak
+App Content displays all workbenches that can be booked lets sort them by each category, search for workbench set the date for booking and displays workbench location on google maps. 
+\begin{center}    
+	\includegraphics{img/AppContent.png}
+\end{center}
+
+
+\subsection{Social Providers}
+Social Provider needs to be set up on Auth0 website and keys need to be set up for any particular social provider such gmail github etc throw their website and developer account need to be created for gmail and github.
+
+\pagebreak
+Github
+\begin{center}    
+	\includegraphics{img/SocialGithub.png}
+\end{center}
+\pagebreak
+Gmail
+\begin{center}    
+	\includegraphics{img/SocialGmail.png}
+\end{center}
+\pagebreak
+\subsection{Heroku}
+Folowing commands are used to upload website to heroku server.
+\begin{minted}{javascript}
+
+heroku login
+heroku git clone https://github.com/VytasHub/bookAroom-user
+heroku create bookaroomnow
+heroku push origin master
+
+
+\end{minted}
+
+\begin{center}    
+	\includegraphics{img/Heroku.png}
+\end{center}
+
+Proc file needs to be created and put in top directory of the project this were issues arose because Auth0 consistent of two separate applications which had two separate server so bout of them were put in to one to alow heroku upload.
 
 
 
 
 \section{bookAroom-admin}
-As many pages as needed.
+This website was made using yeoman generator described in technical review. The main components of the app are listed below.
+
+\begin{itemize}
+	\item Web application
+	\item Heroku
+	\item Firebase 
+\end{itemize}
+\pagebreak
+
+Here is a flow diagram of the design of application.
+
+\begin{center}    
+	\includegraphics{img/bookAdmin.png}
+\end{center}
+\subsection{Web application}
+
+Web application consists of three pages. 
+
+\begin{itemize}
+	\item Landing page
+	\item Add page
+	\item View page 
+\end{itemize}
+\pagebreak
+This is landing page of the application it doest’t have any functionality apart from introducing Admin to the page.
+\begin{center}    
+	\includegraphics{img/AdminLanding.png}
+\end{center}
+
+This view page where all records can be viewed edited deleted, search for and sorted.
+\begin{center}    
+	\includegraphics{img/AdminAdd.png}
+\end{center}
+
+\pagebreak
+This page where records can be added and than be viewed on view page.
+\begin{center}    
+	\includegraphics{img/AdminView.png}
+\end{center}
+\begin{center}    
+	\includegraphics{img/AddDelete.png}
+\end{center}
+
+\subsection{Heroku}
+Flowing commands are used to upload website to heroku server.
+\begin{minted}{javascript}
+
+heroku login
+heroku git clone https://github.com/VytasHub/bookAroom-admin
+heroku create bookaroomnow
+heroku push origin master
+
+
+\end{minted}
+
+\begin{center}    
+	\includegraphics{img/Heroku.png}
+\end{center}
+\pagebreak
+\subsection{Firebase}
+Firebase store all the workbenches object and can be Created, Updated, Deleted.
+
+\begin{center}    
+	\includegraphics{img/Firebase.png}
+\end{center}
+
+\section{Google maps}
+
+MongoDB is used in this project to store the locations of the workbenches which are displayed on the map. MongoDB is the leading NoSQL database which is efficient and scalable. Unlike traditional table-based relational databases it uses JSON like documents with dynamic schemas to make the integration of data in certain types of apps easier and quicker. This application used mLab to host the MongoDB on Amazon Web Services. For each record there is a field for the Workbench name, location, number of rooms and a link to book a room. The database can be accessed by logging into mLab.com and here records can be added, edited or deleted. The following code extract is used so the application connects to the MongoDB on Amazon Web Services;
+
+\begin{minted}{javascript}
+
+var mongoose = require('mongoose');
+mongoose.connect(“mongodb://workbenches1:workbenchlocations@ds013310.
+mlab.com:13310/workbenches”)
+
+\end{minted}
+
+The data from MongoDB can then be displayed on the map as shown below;
+google maps
+
+\begin{center}    
+	\includegraphics{img/googlempas.png}
+\end{center}
+
+The application uses the Google Maps JavaScript API to displays a Google Maps element with markers for the workbench locations. To use these maps in a web application, a key must first be obtained from the Google Developers site. This key is then added into the html file which allows it to display the map on the page;
+
+\begin{minted}{javascript}
+
+<script src="https://maps.googleapis.com/maps/
+api/js?key=AIzaSyB6r9DaTCZdMx6MxqQQEviy3GaGS-5tXrg"></script>
+
+\end{minted}
+
 
 
 \chapter{System Evaluation}
-As many pages as needed.
+
+Both of the applications are used developing MEAN (Mongo, Express, Angular, Node.js) stack and Firebase these technology’s been tested by the industry and are well proven to robust and allows for quick and rapid development taking out mundane tasks combining this with yeoman generator it makes development even easier as yeoman generates test cases using modules such as:
+
 \begin{itemize}
-\item Prove that your software is robust. How? Testing etc. 
-\item Use performance benchmarks (space and time) if algorithmic.
-\item Measure the outcomes / outputs of your system / software against the objectives from the Introduction.
-\item Highlight any limitations or opportuni-ties in your approach or technologies used.
+	\item jshint
+	\item travis
+	\item karma 
+	\item jscsrc 
 \end{itemize}
+
+\section{Firebase}
+Firebase was founded in 2011 and is object oriented database allowing for fast retrieval of objects. It allows to store and sync data across many different platforms one of its best feature is three way data binding between Firebase and your applications view and controller and stores data in json like format which is well understood format by developers across the world. Company has been acquired by google in 2014. Firebase is built in to Auth0 authentication framework which was one of the reasons why it was chosen for this project because Auth0 framework was used for authentication of this application Auth0 framework will be explained in more detail in Components section. Firebase generates authentication key which needs to be supplied to Auth0 in order to let firebase requests throw authentication system shown below.
+
+\section{Express}
+Is part of the MEAN stack bundle and it handles server side. Express is owned by IBM as of 2015 ans in 2016 IBM announced that it will put Exprrss.js under the stewardship of the Node.js foundation incubator.
+\begin{minted}{javascript}
+
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 8080;
+
+app.use(express.static(__dirname + '/dist/'));
+
+app.listen(port, function() {
+console.log('Our app is running on port: ' + port);
+});
+
+
+\end{minted}
+
+Express.js is a node.js web application (node.js is covered in other section) and uses minimalistic approach all server side script can be done in few lines of code this peace of code was used to run bookAroom-admin website shown below.
+
+
+\section{Angular}
+Web applications are browser-based applications running in a browser
+using HTML5. WebHooks allow developers to access the hardware on a
+phone, this was unavailable before HTML5 [16], also it allows other features
+such as web storage, indexed database APIs, file APIs, web SQL Databases and
+Offline Web GeoLocations. This makes web applications more mobile
+friendly and compatible and allows them to use the full range of phone
+features. They do not require installation or any upgrades as it contains a one
+to many relationship (one server, many clients) so any updates are done on
+the server side and all clients get updated, but the network is required at all
+times in order to access the application. It lacks the native look and feel of
+target platforms such as Android, iOS or Windows Phone, altough there are
+many tools out there trying to solve the problem by simulating a native look
+such as Xui, JQyeryMobile, Sencha Touch, JQTouch and WebApp.net. Some
+6
+frameworks developing web applications include AngularJS, Ruby on Rails,
+Django and Drupal. AngularJS is explained in more detail down below.
+
+It was developed by Misko Hevery in 2009 at Brath Tech LLC. It is now an
+open source framework mainly used for developing single page applications
+(SPA) it has become widely well known and is the top choice for many
+developers for creating dynamic html pages. In order to be able to program
+in AngularJS you have to know HTML, CSS and JavaScript. It is maintained by
+Google and the developer-community; it is under MIT license. It uses
+data binding which means you can attach controllers to certain parts of the
+page as well as taking advantage of the MVC (Model, View, Controller)
+pattern, creating a loosely coupled design to separate the three components
+of the web application so that they all are independent to one another; one of
+them can be changed without impacting the others and you can swap and
+change components. If an application contains more than one page it can use
+Client side routing in order to dynamically switch content without refreshing
+the page. The Batarang plugin was built by Google in 2012 to improve
+the debugging of web applications built using AngularJS. It is also used with
+another three popular technologies known collectively as the MEAN Stack
+(MongoDB, Express, AngularJS and NodeJS). MongoDB is cross platform
+oriented database, it uses a JavaScript/JSON style syntax; it is open source.
+Express is a server framework that is used for building single page web
+applications and is expandable via plugins. NodeJS is cross platform runtime
+environment for server side applications, it’s open source. As we can see all
+the technologies used in the MEAN stack are open source suggesting the
+reason for its huge community and popularity.
+
+\section{Node.js}
+Is an open source cross platform runtime environment for developing server-side web applications. It has been founded and released in 2009 and interprets googles V8 JavaScript engine. Some of the corporate users from industry include IBM, LinkedIn, PayPal, SAP, Yahoo so it’s well adopted by heavy hitters in industry. Originally Node.js was only supported by linux operating systems, which enforces the reason for using Debian/linux operating system for this project.
+
+\section{Google Maps}
+
+When developing the app, it was tested from various locations to check the accuracy of the user’s location and was found to be quite precise, usually within 2km of their actual location. This feature could be expanded upon and used as a check in system if the app was further developed. The app was tested on various sized devices and adjusted well in each case.
+One of the objectives of this project was to display the workbench locations on a map so that the user could easily determine suitable centres. Thankfully we were able to achieve this and the project includes a map which displays markers where the workbenches are that allows the user to easily zoom and move the map. Despite reaching this goal, there are some improvements that could have been made to this particular feature such as for the marker to display the distance from the user or the estimated travel time.
+On the whole, the Google Maps JavaScript API is considered quite robust and this is one of the reasons it is so universally used. The markers that are displayed on the map are stored on a MongoDB and hosted on the Amazon Web Service using mLab as this is quite fast and efficient. mLab was chosen for a number of reasons including its seamless, zero downtime scaling and its feature for backup and recovery.
+There were a number of limitations on the project including time constraints which we had to meet. 
+A number of opportunities also arose due to the technologies used. Using the MEAN Stack meant JavaScript was used throughout so the app could be more easily integrated together than if using for example the LAMP stack. This meant that one language could be learned and also each layer uses JSON so data flows neatly. 
+
+
 
 \chapter{Conclusion}
-About three pages.
+\section{Vytas Conclusion}
+In the development of this project I learned a huge amount of new technologies and how everyone and each of them work and what are the advantages using development stacks and different frameworks usefulness of testing and power of automation by automating mundane tasks with bash scripting which proved to be very useful. I have automated GitHub commit push and upload to heroku server all in one script called .go/sh which made life a lot easier. These the technologies I learned in development of this web application:
 
 \begin{itemize}
-\item Briefly summarise your context and ob-jectives (a few lines).
-\item Highlight your findings from the evalua-tion section / chapter and any opportuni-ties identified.
+	\item Firebase
+	\item Mongo
+	\item Node.js 
+	\item Express
+	\item Angular
+	\item Heroku
+	\item Angular Formly
+	\item Ng-Repeat
+	\item Yeoman 
+	\item Debian
+	\item Auth0
 \end{itemize}
+As well I learned full development life cycle of web application went from idea and planning to development debugging testing and finally deployment. Debugging web applications did prove tricky but using right tool it does improve and after a while errors get repetitive. Seeing a syntax error is one of the best things because it easy to fix. Few of moust encountered errors:
+\begin{itemize}
+	\item Module is not defined
+	\item It’s not a function and got undefined
+	\item Failed to inject dependency
+	\item 404 not found
+\end{itemize}
+Once I learned how to deal with moust occurring errors the development of application got a lot smoother and cleaner. My biggest insight in to developing this application that using a stack like MEAN stack is a big advantage when developing an application because all technologies work very well together and there is good community around it to help. One of the biggest advantage was using Fire base as it has very good documentation and very good tutorials how to incorporate it in to your application. In the development I also contacted Auth0 team because I had an error they got back to me very quickly with solution which was big help so for any future applications that I might develop that would require authentication I would
+ use Auth0.
+ 
+ \section{Team Conclusion}
+ 
+ We achieved the feature of a map displaying markers for the workbench locations but there are a number of ways the project could be expanded upon and improved if there had been more time. One way I think the project could be expanded upon is to create a hybrid or native application which could provide a slightly better experience for the user. I think the Maps feature could be improved so that the info window could display a short list of available times for a quick booking feature.
+ This project was quite challenging and gave me a great insight into the process of developing an application from start to finish. I feel it has given me some invaluable experience and understanding of all the different stages from planning and designing the application to the development and finally the deployment stage.
+ 
+
+
+
+\chapter{References}
+www.firebase.com
+\\https://www.mongodb.org/
+\\https://nodejs.org/en/
+\\http://expressjs.com/
+\\https://angularjs.org/
+\\https://dashboard.heroku.com/
+\\https://scotch.io/tutorials/easy-angularjs-forms-with-angular-formly
+\\https://scotch.io/tutorials/building-dynamic-angular-forms
+\\https://scotch.io/tutorials/create-a-custom-yeoman-generator-in-4-easy-steps
+\\https://www.debian.org/
+\\https://auth0.com/
+\\http://codebins.com/
+\\scotch.io/tutorials/making-mean-apps-with-google-maps-part-i
+\\scotch.io/tutorials/making-mean-apps-with-google-maps-part-ii
+\\http://docs.mlab.com/
+\\www.google.com/maps/documentation
+
+
+
 
