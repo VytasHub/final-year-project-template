@@ -1,17 +1,35 @@
-\chapter*{About this project}
-\paragraph{Abstract}
-A brief description of what the project is, in about two-hundred and fifty words.
+\chapter*{About this project Abstract}
 
-\paragraph{Authors}
-Explain here who the authors are.
+\bigbreak
+The project aim is to create booking system for Bank of Ireland workbenches as its becoming more and more automated all branches across Ireland have viewer people in them and all the free space become available and unused so workbenches idea was introduced to fill the empty space. The approach taken to develop this was make a web application using MEAN (MongoDB, Express, Angular, Node) approach
+and swap MongoDB for Firebase. Conclusion was reached after much research to develop 2 websites one for the users one for the admin. The purpose of admin website is to add new workbenches all across Ireland and be able to edit them and suspend them if needed. The user site has authentication from third party software called Auth0 system them lets them log with gmail or GitHub for convenience or sign up for an account in and see all the workbenches added and lets them book and workbench available as well as search for viany particular workbench in the Country, google Maps plug in is also available that shows all the workbenches on map marked with pin that displays additional details. The finished websites were uploaded on heroku server so can be accessed publicly.
+Firstly, at the moment, users must contact the workbench only during business hours to schedule a room. As the project proposes an online booking system, it will be available 24/7, thus solving this issue and cutting out the middle-man as the workbench does not need to be contacted directly.
+The project also enables the user to see all centres on a map within a specified distance. It will act as a 'one-stop shop' for the user, rather than having to contact each centre separately to check availability or to make a booking. As well as this it will display to the user alternate centres if one is not available. The application allows workbenches to be easily added, edited or removed as needed.
 
+
+\chapter*{Authors}
+Developers of the project were:
+\bigbreak
+
+Vytas Vaiciulis 
+\\Niall Mcgrath 
+\pagebreak
+
+\chapter*{Acknowledgements}
+We would like to acknowledge team supervisor Damien Costello for support and understanding as well as all GMIT teachers for helping us to get this far.
+\pagebreak
 
 
 \chapter{Introduction}
 \bigbreak
-It’s a booking web application build using MEAN stack (MongoDB, Express, Angular, Node).The application is made of two websites bookAroom-user and bookAroom-admin.
-BookAroom-user is using Auth0 authentication system which allows for convenient log in with gmail fb as well as sign up form with password recovery. Once user is signed in he/she can book search and sort workbenches.
-BookAroom-admin is using json web-tokens identification system. It lets administrative user to add, edit and deletes existing and new workbenches.
+
+The approach taken to develop this was make a web application using MEAN (MongoDB, Express, Angular, Node) approach and swap MongoDB for Firebase. Conclusion was reached after much research to develop 2 websites one for the users one for the admin. The purpose of admin website is to add new workbenches all across Ireland and be able to edit them and suspend them if needed. The user site has authentication from third party software called Auth0 system them lets them log with gmail or GitHub for convenience or sign up for an account in and see all the workbenches added and lets them book and workbench available as well as search for any particular workbench in the Country, google Maps plug in is also available that shows all the workbenches on map marked with pin that displays additional details. The finished websites were uploaded on heroku server so can be accessed publicly.
+Model View Controller was used in the development of this website as it separates all 3 components. So Firebase was chosen for Mode to store all the workbench data JavaScript controllers to manipulated  filter and do the logic and html to display element for the user as booth  websites bookAroom-user and bookAroom-Admin connect to same database but are restricted to certain capabilities. One of the requirements were that application need to be accessed by all different platforms research literature review was carried out in cross platform development and conclusion was reached to develop it as web application as it cross platform accessible as well as cross screen accessible with aid of bootstrap.
+This project was developed to create an easy way for a user to book a room in an Innovation Centre, or more specifically the Bank of Ireland Workbenches. There are a number of reasons why a system like this is needed.
+Firstly, at the moment, users must contact the workbench only during business hours to schedule a room. As the project proposes an online booking system, it will be available 24/7, thus solving this issue and cutting out the middle-man as the workbench does not need to be contacted directly.
+The project also enables the user to see all centres on a map within a specified distance. It will act as a 'one-stop shop' for the user, rather than having to contact each centre separately to check availability or to make a booking. As well as this it will display to the user alternate centres if one is not available. The application allows workbenches to be easily added, edited or removed as needed.
+
+
 
 \chapter{Context}
 \begin{itemize}
@@ -28,14 +46,32 @@ BookAroom-admin is using json web-tokens identification system. It lets administ
 
 
 \chapter{Methodology}
-About one to two Page
-Describe the way you went about your project:
-\begin{itemize}
-\item Agile / incremental and iterative approach to development. Planning, meetings.
-\item What about validation and testing? Junit or some other framework.
-\item If team based, did you use GitHub during the development process.
-\item Selection criteria for algorithms, languages, platforms and technolo-gies.
-\end{itemize}
+
+
+\section{Agile}
+
+During this project, the agile approach was chosen over more traditional approaches like the waterfall model or other sequential approaches for its flexibility. This approach helps respond effectively to change through incremental, iterative phases (called sprints), which seemed more effective than the waterfall methodology which relies on every requirement being known before any design or coding occurs. A Scrum methodology was used so that each phase included all aspects of development. Using this approach, small changes were added each phase to improve it.
+
+\section{GitHub}
+
+At various times throughout the project, GitHub, an online project hosting tool, was used to maintain and keep track of the development. GitHub was chosen as it offers all the distributed revision control and source code management functionality of Git but has other benefits which make it easier to use such as a web based interface and desktop integration, rather than just using the command line. Here are the repositories links that the project is composed of. 
+
+https://github.com/VytasHub/bookAroom-user
+https://github.com/VytasHub/bookAroom-admin
+https://github.com/mcgrath94/FYP-Google-Maps
+And also link to the documentation repository.
+https://github.com/VytasHub/final-year-project-template
+
+
+
+\section{CROSS-PLATFORM DEV}
+
+There are a number of reasons a web application was selected over a native app. Web applications have the benefit of portability as they can be coded once and ran on many different devices rather than having to waste time and effort developing on multiple platforms. In a similar way, this makes the maintainability of a web app easier. Naturally these two factors mean they are more cost effective. Web apps also do not require the user to download or update them. Although web apps have some drawbacks such as not being able to achieve the same performance or user experience as native apps, there is little performance penalty for apps that aren't graphic heavy. 
+
+\section{Testing}
+
+The app was tested by running it locally and listening to that port. This allowed to fix any errors and verify the application was in working order. It was also tested from various locations to determine how accurate it was at finding the users location.
+
 
 
 
@@ -451,44 +487,103 @@ $ heroku open
 
 One of the issues that occurred while deploying to server was when pushing to server using git push heroku master old website were getting pushed. So need to use git status to see what you actually pushing because git repositories get queued in heroku and only first one gets pushed.
 
-
-
-
-
-
-
-
 \subsection{Auth0}
 
+\begin{minted}{javascript}
+
+.when('/view', {
+templateUrl: 'views/view.html',
+controller: 'WorkBenchController',
+controllerAs: 'fireApp'
+})
+
+\end{minted}
 
 
 
 
-\begin{itemize}
-\item Describe each of the technologies you used at a conceptual level. Standards, Database Model (e.g. MongoDB, CouchDB), XMl, WSDL, JSON, JAXP.
-\item Use references (IEEE format, e.g. [1]), Books, Papers, URLs (timestamp) – sources should be authoritative. 
-\end{itemize}
+
 
 
 
 \chapter{System Design}
-As many pages as needed.
-\begin{itemize}
-\item Architecture, UML etc. An overview of the different components of the system. Diagrams etc… Screen shots etc.
-\end{itemize}
+\section{bookAroom-user}
+\bigbreak
 
-\begin{table}[h]
-  \centering
-  \begin{tabular}{x{2cm}p{3cm}}
-    \toprule \\
-    Column 1 & Column 2 \\
-    \midrule \\
-    Rows 2.1 & Row 2.2 \\
-    \bottomrule
-  \end{tabular}
-  \caption{A table.}
-  \label{table:mytable}
-\end{table}
+We have five components to the application
+
+\begin{itemize}
+	\item Auth0
+	\item Firebase
+	\item MongoDB
+	\item WebApplication 
+	\item Social Providers
+	\item Heroku
+\end{itemize}
+\bigbreak
+
+Down below flow diagram of the application is displayed.
+
+\begin{center}    
+	\includegraphics{img/userFlow.png}
+\end{center}
+\bigbreak
+
+
+\subsection{Auth0}
+Auth0 logging in system which allows user to sign up or log in with social provider such GitHub or Gmail. And is composed of 2 part an Angular app which contains all of the websites content and a node API which handles the logging , but when uploading it to heroku server prove to be challenging to start 2 separate components so bout were combined into one server.js file.
+\bigbreak
+
+\begin{minted}{javascript}
+
+var http = require('http');
+var express = require('express');
+var cors = require('cors');
+var app = express();
+var jwt = require('express-jwt');
+var dotenv = require('dotenv');
+
+dotenv.load();
+var port = process.env.PORT || 3001;
+
+\end{minted}
+
+\bigbreak
+
+Auth0 system had to be configured by adjusting following variables in auth0-variables.js calss. The variables show below were obtained from Auth0 provider when crating the application.
+
+\begin{minted}{javascript}
+
+var AUTH0_CLIENT_ID='d4aV2GYuoQxjQ4qU5yfS3XiIQPwdmkOH';
+var AUTH0_DOMAIN='book.eu.auth0.com';
+var AUTH0_CALLBACK_URL=location.href;
+var AUTH0_CLIENT_SECRET='78KGRbG59R-
+FEevfFL8eIBeGt2bf3DucmAMqeLzuv4jpbGnM-uoXiea_EqZoWyLN';
+
+
+\end{minted}
+\begin{center}    
+	\includegraphics{img/AuthProfile.png}
+\end{center}
+
+
+\pagebreak
+\subsection{Firebase}
+\bigbreak
+Firebase store all the workbeches object and can be Created, Updated, Deleted.
+
+\begin{center}    
+	\includegraphics{img/Firebase.png}
+\end{center}
+\pagebreak
+
+
+
+
+
+\section{bookAroom-admin}
+As many pages as needed.
+
 
 \chapter{System Evaluation}
 As many pages as needed.
